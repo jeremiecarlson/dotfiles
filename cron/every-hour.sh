@@ -4,7 +4,7 @@
 
 set -x
 
-PATH=/Users/paulirish/bin:/Users/paulirish/.homebrew/bin:/Users/paulirish/.homebrew/sbin:/Users/paulirish/code/depot_tools:$PATH
+PATH=/Users/jeremiecarlson/bin:/Users/jeremiecarlson/.homebrew/bin:/Users/jeremiecarlson/.homebrew/sbin:/Users/jeremiecarlson/code/depot_tools:$PATH
 
 local_script_path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 

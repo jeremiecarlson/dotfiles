@@ -1,5 +1,5 @@
-set default_user "paulirish"
-set default_machine "paulirish-macbookair2"
+set default_user "jeremiecarlson"
+set default_machine "jeremiecarlson-mbp"
 
 
 source ~/.config/fish/path.fish
@@ -108,7 +108,7 @@ set -gx LESS_TERMCAP_us \e'[04;38;5;146m' # begin underline
 
 # tabtab source for yarn package
 # uninstall by removing these lines or running `tabtab uninstall yarn`
-[ -f /Users/paulirish/.config/yarn/global/node_modules/tabtab/.completions/yarn.fish ]; and . /Users/paulirish/.config/yarn/global/node_modules/tabtab/.completions/yarn.fish
+[ -f /Users/jeremiecarlson/.config/yarn/global/node_modules/tabtab/.completions/yarn.fish ]; and . /Users/jeremiecarlson/.config/yarn/global/node_modules/tabtab/.completions/yarn.fish
 
 # rvm default
 

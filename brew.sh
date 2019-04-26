@@ -75,7 +75,7 @@ brew install pidcat   # colored logcat guy
 
 brew install ncdu # find where your diskspace went
 
-brew install zsh
+# brew install zsh
 
 # Remove outdated versions from the cellar
 brew cleanup

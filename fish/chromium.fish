@@ -10,7 +10,7 @@ function b --description "build chromium"
 	set -l dir (grealpath $PWD/(git rev-parse --show-cdup)out/Default/)
 	# 1000 will die with 'fatal: posix_spawn: No such file or directory'. 900 never has.
 
-    set -l cmd "ninja -C "$dir" -j900 -l 48 chrome"  # rvm'd blink_tests 
+    set -l cmd "ninja -C "$dir" -j900 -l 48 chrome"  # rvm'd blink_tests
     echo "  > $cmd"
     eval $cmd
     echo ""
@@ -60,7 +60,7 @@ end
 
 function gom --description "run goma setup"
     set -x GOMAMAILTO /dev/null
-    set -x GOMA_OAUTH2_CONFIG_FILE /Users/paulirish/.goma_oauth2_config
+    set -x GOMA_OAUTH2_CONFIG_FILE /Users/jeremiecarlson/.goma_oauth2_config
     set -x GOMA_ENABLE_REMOTE_LINK yes
 
     if not test (curl -X POST --silent http://127.0.0.1:8088/api/accountz)

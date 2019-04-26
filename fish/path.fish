@@ -19,7 +19,7 @@ end
 
 # # rvm
 # if which -s rvm;
-# 	set PA $PA /Users/paulirish/.rvm/gems/ruby-2.2.1/bin
+# 	set PA $PA /Users/jeremiecarlson/.rvm/gems/ruby-2.2.1/bin
 # end
 
 
@@ -41,7 +41,7 @@ for entry in (string split \n $paths)
 end
 
 # GO
-set PA $PA "/Users/paulirish/.go/bin"
+set PA $PA "/Users/jeremiecarlson/.go/bin"
 
 # Google Cloud SDK.
 if test -f "$HOME/google-cloud-sdk/path.fish.inc"
