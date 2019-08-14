@@ -81,7 +81,6 @@ cp -Rp ~/Pictures ~/migration
 ##############################################################################################################
 
 
-
 ##############################################################################################################
 ### XCode Command Line Tools
 #      thx https://github.com/alrra/dotfiles/blob/ff123ca9b9b/os/os_x/installs/install_xcode.sh
@@ -138,6 +137,10 @@ export PATH=$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$PATH
 ##############################################################################################################
 
 
+# https://github.com/isaacs/nave
+# needs npm, obviously.
+# TODO: I think i'd rather curl down the nave.sh, symlink it into /bin and use that for initial node install.
+npm install -g nave
 
 
 ##############################################################################################################

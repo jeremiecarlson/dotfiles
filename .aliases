@@ -18,6 +18,10 @@ alias cask='brew cask' # i <3 u cask
 alias where=which # sometimes i forget
 alias brwe=brew  #typos
 
+alias code="open -a /Applications/Visual\ Studio\ Code.app"
+
+alias ,="code ."
+
 alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.com ;)
 
 alias ag='ag -f --hidden'
@@ -37,7 +41,6 @@ alias ls='gls -AFh ${colorflag} --group-directories-first'
 alias lsd='ls -l | grep "^d"' # only directories
 #    `la` defined in .functions
 ###
-
 
 
 ###

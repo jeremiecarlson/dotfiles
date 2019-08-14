@@ -35,6 +35,13 @@
 # so much color
 [color]
 	ui = auto
+	editor = code --wait
+
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+
 [color "diff"]
 	meta = yellow bold
 	commit = green bold
@@ -44,15 +51,18 @@
 	whitespace = red reverse
     newMoved = cyan
     oldMoved = blue
+
 [color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = "red bold 52"
 	newNormal = "green bold"
 	newHighlight = "green bold 22"
+
 [color "branch"]
 	current = yellow reverse
 	local = yellow
 	remote = green
+
 [color "status"]
 	added = yellow
 	changed = green
@@ -76,9 +86,15 @@
 [url "git@gist.github.com:"]
 	pushInsteadOf = "gist:"
 	pushInsteadOf = "git://gist.github.com/"
-	
+
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
+
+# Any GitHub repo with my username should be checked out r/w by default
+# http://rentzsch.tumblr.com/post/564806957/public-but-hackable-git-submodules
+
+[url "git@github.com:jeremiecarlson/"]
+  insteadOf = "git://github.com/jeremiecarlson/"
 
 # correct typos
 [help]
@@ -96,20 +112,35 @@
 #[init]
 #	templatedir = ~/.git_template
 
-[filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
-
 [fetch]
 	prune = true
+
 [diff]
     # Show blocks of moved text of at least 20 alphanumeric characters differently than adds/deletes
     # https://blog.github.com/2018-04-05-git-217-released/
     colorMoved = zebra
+
 [remote "origin"]
 	fetch = +refs/heads/*:refs/remotes/origin/*
+
 [stash]
 	showPatch = true
+
 [log]
 	date = relative
+
+[user]
+	name = Jeremie Carlson
+	email = jeremie.carlson@instrument.com
+
+[credential]
+	helper = osxkeychain
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
+	process = git-lfs filter-process
+
+[http]
+	cookiefile = /Users/jeremiecarlson/.gitcookies

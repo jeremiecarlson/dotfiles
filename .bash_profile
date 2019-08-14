@@ -75,13 +75,6 @@ export NVM_DIR="$HOME/.nvm"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 
-
-# z beats cd most of the time. `brew install z`
-if which brew > /dev/null; then
-    zpath="$(brew --prefix)/etc/profile.d/z.sh"
-    [ -s $zpath ] && source $zpath
-fi;
-
 ##
 ## Completion…
 ##
@@ -119,19 +112,27 @@ fi;
 # You could just use `-g` instead, but I like being explicit
 complete -W "NSGlobalDomain" defaults
 
-
+# Added by Grow SDK Installer (2015-06-10 16:11:40.788796)
+alias grow="/Users/jeremiecarlson/bin/grow"
 ##
-## better `cd`'ing
+# Your previous /Users/jeremiecarlson/.bash_profile file was backed up as /Users/jeremiecarlson/.bash_profile.macports-saved_2015-08-10_at_11:32:29
 ##
 
-# Case-insensitive globbing (used in pathname expansion)
-shopt -s nocaseglob;
+alias subl="open -a /Applications/Sublime\ Text.app"
 
-# Correct spelling errors in arguments supplied to cd
-shopt -s cdspell;
+# GUP
 
-# Autocorrect on directory names to match a glob.
-shopt -s dirspell 2> /dev/null
+alias gup="git add . ; git commit -m “.” ; git push origin master ;"
 
-# Turn on recursive globbing (enables ** to recurse all directories)
-shopt -s globstar 2> /dev/null
+export PATH="/Users/jeremiecarlson/.nvm/versions/node/v5.4.0/bin/flow:$PATH"
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# MacPorts Installer addition on 2015-08-10_at_11:35:34: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/jeremiecarlson/google-cloud-sdk/path.bash.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/jeremiecarlson/google-cloud-sdk/completion.bash.inc'

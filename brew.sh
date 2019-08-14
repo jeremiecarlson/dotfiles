@@ -20,7 +20,17 @@ brew install gnu-sed --with-default-names
 
 # Bash 4
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`.
-brew install bash
+# brew install bash
+# regular bash-completion package is held back to an older release, so we get latest from versions.
+#   github.com/Homebrew/homebrew/blob/master/Library/Formula/bash-completion.rb#L3-L4
+
+# Prefer zsh to bash
+brew install zsh
+brew install zsh-completions
+brew install zsh-history-substring-search
+
+brew tap homebrew/versions
+brew install homebrew/versions/bash-completion2
 
 brew install bash-completion
 
@@ -60,8 +70,8 @@ brew install the_silver_searcher
 brew install fzf
 
 brew install git
+brew install git-lfs
 brew install imagemagick --with-webp
-brew install node # This installs `npm` too using the recommended installation method
 brew install pv
 brew install rename
 brew install tree
@@ -76,6 +86,15 @@ brew install pidcat   # colored logcat guy
 brew install ncdu # find where your diskspace went
 
 # brew install zsh
+brew install node
+brew install mysql
+brew install sqlite
+brew install postgresql
+brew install python
+brew install yarn
+
+# Instrument work
+brew install app-engine-python
 
 # Remove outdated versions from the cellar
 brew cleanup
