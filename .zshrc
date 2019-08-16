@@ -45,6 +45,10 @@ export PATH=$HOME/bin/node_modules/grunt-cli/bin:$PATH
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME:$PATH"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases and ~/.functions
 # ~/.extra can be used for settings you don’t want to commit
 for file in ~/.{extra,exports,aliases,functions}; do
