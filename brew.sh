@@ -29,22 +29,18 @@ brew install zsh
 brew install zsh-completions
 brew install zsh-history-substring-search
 
-brew tap homebrew/versions
-brew install homebrew/versions/bash-completion2
+# brew tap homebrew/versions #deprecated
+# brew install homebrew/versions/bash-completion2
 
 brew install bash-completion
 
 brew install homebrew/completions/brew-cask-completion
 
 # Install wget with IRI support
-brew install wget --with-iri
+brew install wget
 
 # Install more recent versions of some OS X tools
-brew install vim --with-override-system-vi
-brew install homebrew/dupes/nano
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
+brew install vim
 
 # z hopping around folders
 brew install z
@@ -71,16 +67,16 @@ brew install fzf
 
 brew install git
 brew install git-lfs
-brew install imagemagick --with-webp
+brew install imagemagick
 brew install pv
 brew install rename
 brew install tree
 brew install zopfli
-brew install ffmpeg --with-libvpx
+brew install ffmpeg
 
 brew install terminal-notifier
 
-brew install android-platform-tools
+# brew install android-platform-tools #does not exist?
 brew install pidcat   # colored logcat guy
 
 brew install ncdu # find where your diskspace went

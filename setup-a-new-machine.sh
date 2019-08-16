@@ -125,9 +125,10 @@ fi
 ##############################################################################################################
 ### homebrew!
 
+# This is old now
 # (if your machine has /usr/local locked down (like google's), you can do this to place everything in ~/.homebrew
-mkdir $HOME/.homebrew && curl -L https://github.com/mxcl/homebrew/tarball/master | tar xz --strip 1 -C $HOME/.homebrew
-export PATH=$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$PATH
+# mkdir $HOME/.homebrew && curl -L https://github.com/mxcl/homebrew/tarball/master | tar xz --strip 1 -C $HOME/.homebrew
+# export PATH=$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$PATH
 
 # install all the things
 ./brew.sh
@@ -140,7 +141,10 @@ export PATH=$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$PATH
 # https://github.com/isaacs/nave
 # needs npm, obviously.
 # TODO: I think i'd rather curl down the nave.sh, symlink it into /bin and use that for initial node install.
-npm install -g nave
+# npm install -g nave
+
+# Try Volta instead?
+curl https://get.volta.sh | zsh
 
 
 ##############################################################################################################
